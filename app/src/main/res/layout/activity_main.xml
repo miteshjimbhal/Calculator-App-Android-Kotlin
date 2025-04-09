@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:background="@color/colorPrimary_black"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/inputTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="50sp"
+        android:textColor="@color/white"
+        android:layout_above="@+id/outputTextView"
+        android:gravity="end"/>
+
+    <TextView
+        android:id="@+id/outputTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="75sp"
+        android:textColor="@color/white"
+        android:layout_above="@+id/btnLayout"
+        android:gravity="end" />
+
+    <LinearLayout
+        android:id="@+id/btnLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="30dp"
+        android:background="@color/black"
+        android:orientation="vertical">
+
+        <!-- Row 1 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="5dp">
+
+            <ImageView
+                android:id="@+id/btn_clear"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_margin="10dp"
+                android:background="@drawable/btn_ac"
+                tools:ignore="ContentDescription"/>
+
+            <ImageView
+                android:id="@+id/btn_mod"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_margin="10dp"
+                android:background="@drawable/btn_module"
+                tools:ignore="ContentDescription"/>
+
+            <ImageView
+                android:id="@+id/btn_Backspace"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_margin="10dp"
+                android:background="@drawable/btn_backspa"
+                tools:ignore="ContentDescription"/>
+
+            <ImageView
+                android:id="@+id/btn_divide"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_margin="10dp"
+                android:background="@drawable/btn_divide"
+                tools:ignore="ContentDescription"/>
+        </LinearLayout>
+
+        <!-- Row 2 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="5dp">
+
+            <ImageView
+                android:id="@+id/btn_7"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_margin="10dp"
+                android:background="@drawable/btn_7"
+                tools:ignore="ContentDescription"/>
+
+            <ImageView
+                android:id="@+id/btn_8"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_margin="10dp"
+                android:background="@drawable/btn_8"
+                tools:ignore="ContentDescription"/>
+
+            <ImageView
+                android:id="@+id/btn_9"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_margin="10dp"
+                android:background="@drawable/btn_9"
+                tools:ignore="ContentDescription"/>
+
+            <ImageView
+                android:id="@+id/btn_multi"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_margin="10dp"
+                android:background="@drawable/btn_multiplication"
+                tools:ignore="ContentDescription"/>
+        </LinearLayout>
+
+        <!-- Row 3 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="5dp">
+
+            <ImageView
+                android:id="@+id/btn_4"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_margin="10dp"
+                android:background="@drawable/btn_4"
+                tools:ignore="ContentDescription"/>
+
+            <ImageView
+                android:id="@+id/btn_5"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_margin="10dp"
+                android:background="@drawable/btn_5"
+                tools:ignore="ContentDescription"/>
+
+            <ImageView
+                android:id="@+id/btn_6"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_margin="10dp"
+                android:background="@drawable/btn_6"
+                tools:ignore="ContentDescription"/>
+
+            <ImageView
+                android:id="@+id/btn_minus"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_margin="10dp"
+                android:background="@drawable/btn_minus"
+                tools:ignore="ContentDescription"/>
+        </LinearLayout>
+
+        <!-- Row 4 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="5dp">
+
+            <ImageView
+                android:id="@+id/btn_1"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_margin="10dp"
+                android:background="@drawable/btn_1"
+                tools:ignore="ContentDescription" />
+
+            <ImageView
+                android:id="@+id/btn_2"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_margin="10dp"
+                android:background="@drawable/btn_2"
+                tools:ignore="ContentDescription"/>
+
+            <ImageView
+                android:id="@+id/btn_3"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_margin="10dp"
+                android:background="@drawable/btn_3"
+                tools:ignore="ContentDescription"/>
+
+            <ImageView
+                android:id="@+id/btn_plus"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_margin="10dp"
+                android:background="@drawable/btn_plus"
+                tools:ignore="ContentDescription"/>
+        </LinearLayout>
+
+        <!-- Row 5 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="5dp">
+
+            <ImageView
+                android:id="@+id/btn_00"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_margin="10dp"
+                android:background="@drawable/btn_00"
+                tools:ignore="ContentDescription"/>
+
+            <ImageView
+                android:id="@+id/btn_0"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_margin="10dp"
+                android:background="@drawable/btn_0"
+                tools:ignore="ContentDescription"/>
+
+            <ImageView
+                android:id="@+id/btn_dot"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_margin="10dp"
+                android:background="@drawable/btn_dot"
+                tools:ignore="ContentDescription"/>
+
+            <ImageView
+                android:id="@+id/btn_equalTo"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_margin="10dp"
+                android:background="@drawable/btn_equalto"
+                tools:ignore="ContentDescription"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>
